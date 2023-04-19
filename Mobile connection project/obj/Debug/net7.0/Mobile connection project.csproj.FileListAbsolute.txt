@@ -13,3 +13,18 @@ C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\refint\Mobile connecti
 C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\Mobile connection project.pdb
 C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\Mobile connection project.genruntimeconfig.cache
 C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\ref\Mobile connection project.dll
+c:\Users\Joona\Control mouse\Mobile connection project\bin\Debug\net7.0\Mobile connection project.exe
+c:\Users\Joona\Control mouse\Mobile connection project\bin\Debug\net7.0\Mobile connection project.deps.json
+c:\Users\Joona\Control mouse\Mobile connection project\bin\Debug\net7.0\Mobile connection project.runtimeconfig.json
+c:\Users\Joona\Control mouse\Mobile connection project\bin\Debug\net7.0\Mobile connection project.dll
+c:\Users\Joona\Control mouse\Mobile connection project\bin\Debug\net7.0\Mobile connection project.pdb
+c:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0\Mobile connection project.csproj.AssemblyReference.cache
+c:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0\Mobile connection project.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0\Mobile connection project.AssemblyInfoInputs.cache
+c:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0\Mobile connection project.AssemblyInfo.cs
+c:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0\Mobile connection project.csproj.CoreCompileInputs.cache
+c:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0\Mobile connection project.dll
+c:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0\refint\Mobile connection project.dll
+c:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0\Mobile connection project.pdb
+c:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0\Mobile connection project.genruntimeconfig.cache
+c:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0\ref\Mobile connection project.dll

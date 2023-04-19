@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <Button
@@ -26,7 +27,9 @@
         android:layout_height="491dp"
         android:layout_marginStart="19dp"
         android:layout_marginEnd="19dp"
+        android:background="@color/dark"
         android:text="Mouse click"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="@+id/show_space"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"

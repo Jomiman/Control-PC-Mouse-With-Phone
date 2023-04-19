@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joona\\Mobile connection project\\Mobile connection project.csproj": {}
+    "C:\\Users\\Joona\\Control mouse\\Mobile connection project\\Mobile connection project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joona\\Mobile connection project\\Mobile connection project.csproj": {
+    "C:\\Users\\Joona\\Control mouse\\Mobile connection project\\Mobile connection project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joona\\Mobile connection project\\Mobile connection project.csproj",
+        "projectUniqueName": "C:\\Users\\Joona\\Control mouse\\Mobile connection project\\Mobile connection project.csproj",
         "projectName": "Mobile connection project",
-        "projectPath": "C:\\Users\\Joona\\Mobile connection project\\Mobile connection project.csproj",
+        "projectPath": "C:\\Users\\Joona\\Control mouse\\Mobile connection project\\Mobile connection project.csproj",
         "packagesPath": "C:\\Users\\Joona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joona\\Mobile connection project\\obj\\",
+        "outputPath": "C:\\Users\\Joona\\Control mouse\\Mobile connection project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
