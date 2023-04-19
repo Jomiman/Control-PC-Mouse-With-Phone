@@ -1,0 +1,15 @@
+C:\Users\Joona\Mobile connection project\bin\Debug\net7.0\Mobile connection project.exe
+C:\Users\Joona\Mobile connection project\bin\Debug\net7.0\Mobile connection project.deps.json
+C:\Users\Joona\Mobile connection project\bin\Debug\net7.0\Mobile connection project.runtimeconfig.json
+C:\Users\Joona\Mobile connection project\bin\Debug\net7.0\Mobile connection project.dll
+C:\Users\Joona\Mobile connection project\bin\Debug\net7.0\Mobile connection project.pdb
+C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\Mobile connection project.csproj.AssemblyReference.cache
+C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\Mobile connection project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\Mobile connection project.AssemblyInfoInputs.cache
+C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\Mobile connection project.AssemblyInfo.cs
+C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\Mobile connection project.csproj.CoreCompileInputs.cache
+C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\Mobile connection project.dll
+C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\refint\Mobile connection project.dll
+C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\Mobile connection project.pdb
+C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\Mobile connection project.genruntimeconfig.cache
+C:\Users\Joona\Mobile connection project\obj\Debug\net7.0\ref\Mobile connection project.dll
