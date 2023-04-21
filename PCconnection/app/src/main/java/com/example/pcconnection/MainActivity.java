@@ -1,6 +1,6 @@
 package com.example.pcconnection;
 
-import android.app.ActionBar;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,25 +13,21 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
-import java.nio.charset.StandardCharsets;
 
 public class MainActivity extends AppCompatActivity {
-
-    Socket pcSocket;
-    OutputStream outputStream;
+    SocketSingelton socket = SocketSingelton.GetInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        System.out.println("-------------------------------------------------------");
         ConnectToPC();
 
         MouseClick();
         ShowSpace();
-
-
+        SwitchToArrowKeyView();
     }
+
     void ConnectToPC() {
         Button connectButton = findViewById(R.id.connect_button);
         connectButton.setOnClickListener(new View.OnClickListener() {
@@ -44,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 String serverAddress = "192.168.97.152"; // replace with your computer's IP address
                 int serverPort = 8710; // replace with the port number of your TCP server
                 try {
-                    pcSocket = new Socket(serverAddress, serverPort);
-                    outputStream = pcSocket.getOutputStream();
+                    socket.SetSocket(new Socket(serverAddress, serverPort));
                     Log.d("MyApp", "Connected to server");
 
                 } catch (IOException e) {
@@ -61,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         Button clickButton = findViewById(R.id.click_button);
         clickButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (pcSocket != null) {
+                if (socket.GetSocket() != null) {
                     System.out.println("Click");
                     new Thread(new Runnable() {
                         @Override
@@ -69,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                             // Send a message to the server
                             String message = "Click button";
                             try {
-                                outputStream.write(message.getBytes());
+                                socket.GetSocket().getOutputStream().write(message.getBytes());
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
@@ -79,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    boolean lastdone = true;
 
+    boolean lastdone = true;
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         float x = 0, y = 0;
@@ -107,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Coordinates: " + x + ", " + y);
 
         final String message = x + "," + y;
-        if (lastdone && pcSocket != null) {
+        if (lastdone && socket.GetSocket() != null) {
             lastdone = false;
             new Thread(new Runnable() {
                 @Override
@@ -115,10 +110,10 @@ public class MainActivity extends AppCompatActivity {
                     // Send a message to the server
                     byte[] data = message.getBytes();
                     try {
-                        outputStream.write(data);
+                        socket.GetSocket().getOutputStream().write(data);
 
                         // Wait for server response to know it is safe to send new coordinates
-                        InputStream inputStream = pcSocket.getInputStream();
+                        InputStream inputStream = socket.GetSocket().getInputStream();
                         lastdone = true;
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -134,12 +129,10 @@ public class MainActivity extends AppCompatActivity {
     boolean isSpace = false;
     void ShowSpace() {
 
-        final Button buttonShow = (Button) findViewById(R.id.show_space);
+        final Button buttonShow = (Button) findViewById(R.id.arrow_left);
         final Button buttonClick = findViewById(R.id.click_button);
         buttonShow.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                System.out.println("y " + buttonClick.getY());
-                System.out.println("Height " + buttonClick.getHeight());
                 if (!isSpace) {
                     buttonClick.setY(-300);
                     ViewGroup.LayoutParams params = buttonClick.getLayoutParams();
@@ -154,6 +147,17 @@ public class MainActivity extends AppCompatActivity {
                     buttonClick.setLayoutParams(params);
                     isSpace = false;
                 }
+            }
+        });
+    }
+
+    void SwitchToArrowKeyView() {
+        Button button = findViewById(R.id.switch_to_arrows_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ArrowKeys.class);
+                startActivity(intent);
             }
         });
     }

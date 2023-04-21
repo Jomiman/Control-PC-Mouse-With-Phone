@@ -1,0 +1,5 @@
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\netcoreapp3.0\Mobile connection project.csproj.AssemblyReference.cache
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\netcoreapp3.0\Mobile connection project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\netcoreapp3.0\Mobile connection project.AssemblyInfoInputs.cache
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\netcoreapp3.0\Mobile connection project.AssemblyInfo.cs
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\netcoreapp3.0\Mobile connection project.csproj.CoreCompileInputs.cache

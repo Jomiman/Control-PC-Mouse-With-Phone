@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+	<TargetFramework>net7.0-windows</TargetFramework>
+	<UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>Mobile_connection_project</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>

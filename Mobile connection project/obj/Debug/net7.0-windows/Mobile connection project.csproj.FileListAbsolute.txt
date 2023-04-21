@@ -1,0 +1,15 @@
+C:\Users\Joona\Control mouse\Mobile connection project\bin\Debug\net7.0-windows\Mobile connection project.exe
+C:\Users\Joona\Control mouse\Mobile connection project\bin\Debug\net7.0-windows\Mobile connection project.deps.json
+C:\Users\Joona\Control mouse\Mobile connection project\bin\Debug\net7.0-windows\Mobile connection project.runtimeconfig.json
+C:\Users\Joona\Control mouse\Mobile connection project\bin\Debug\net7.0-windows\Mobile connection project.dll
+C:\Users\Joona\Control mouse\Mobile connection project\bin\Debug\net7.0-windows\Mobile connection project.pdb
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0-windows\Mobile connection project.csproj.AssemblyReference.cache
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0-windows\Mobile connection project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0-windows\Mobile connection project.AssemblyInfoInputs.cache
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0-windows\Mobile connection project.AssemblyInfo.cs
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0-windows\Mobile connection project.csproj.CoreCompileInputs.cache
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0-windows\Mobile connection project.dll
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0-windows\refint\Mobile connection project.dll
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0-windows\Mobile connection project.pdb
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0-windows\Mobile connection project.genruntimeconfig.cache
+C:\Users\Joona\Control mouse\Mobile connection project\obj\Debug\net7.0-windows\ref\Mobile connection project.dll

@@ -5,6 +5,8 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Globalization;
+using System.IO;
+using System.Windows.Forms;
 
 class Program
 {
@@ -21,13 +23,6 @@ class Program
 
         // Do other operations in the main thread while the server is running
         Console.WriteLine("Press Ctrl + C to exit");
-
-        while (true) {
-            Console.ReadLine();
-            
-            Client client = new();
-            client.Connect();
-        }
     }
 
     static void StartServer()
@@ -64,13 +59,24 @@ class Program
 
                 if (request != "") Console.WriteLine("Received: {0}", request);
 
-            if (request == "Click button") {
-                // Simulate a left mouse button down event
-                mouse_event(0x0002, 0, 0, 0, 0);
+            switch (request) {
+                case "Click button":
+                    // Simulate a left mouse button down event
+                    mouse_event(0x0002, 0, 0, 0, 0);
 
-                // Simulate a left mouse button up event
-                mouse_event(0x0004, 0, 0, 0, 0);
+                    // Simulate a left mouse button up event
+                    mouse_event(0x0004, 0, 0, 0, 0);
+                    break;
+
+                case "Arrow right":
+                    SendKeys.SendWait("{RIGHT}");
+                    break;
+
+                case "Arrow left":
+                    SendKeys.SendWait("{LEFT}");
+                    break;
             }
+
             if (request == "Disconnect") break;
 
             if (request.Contains(',')) {
